@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useGrantly } from '../context/GrantlyContext';
+import { sanitizeInput } from '../services/securityService';
 import {
   Search,
   Filter,
@@ -104,7 +105,7 @@ export function DiscoverPage() {
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => setSearchQuery(sanitizeInput(e.target.value))}
               placeholder="Search by scholarship name, sponsor, keyword, or field of study..."
               className="w-full pl-10 pr-4 py-2.5 rounded-full bg-[#181920] border border-white/10 text-xs sm:text-sm text-white placeholder-[#6b7182] focus:outline-none focus:border-[#c9b8a0]/60 transition-colors"
             />

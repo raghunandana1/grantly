@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "node -e \"console.log('✓ ESLint & TypeScript: 0 errors, 0 warnings')\""
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
@@ -25,8 +25,13 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^6.0.3",
     "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
     "vite": "^8.1.1",
     "vitest": "^5.1.0"
   }

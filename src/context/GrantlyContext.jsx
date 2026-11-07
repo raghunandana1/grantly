@@ -12,6 +12,7 @@ import { checkEligibility, filterScholarships } from '../services/scholarshipSer
 import { calculateNetGap, calculateSimulatedGap } from '../services/financialMath';
 import { soundService } from '../services/soundService';
 import { storageService } from '../services/storageService';
+import { sanitizeInput } from '../services/securityService';
 
 const GrantlyContext = createContext(null);
 
@@ -223,13 +224,14 @@ export function GrantlyProvider({ children }) {
   const [essays, setEssays] = useState(REUSABLE_ESSAYS);
 
   const updateEssay = (id, newText) => {
+    const cleanText = sanitizeInput(newText);
     setEssays((prev) =>
       prev.map((e) => {
         if (e.id === id) {
-          const wordCount = newText.trim().split(/\s+/).filter(Boolean).length;
+          const wordCount = cleanText.trim().split(/\s+/).filter(Boolean).length;
           return {
             ...e,
-            fullText: newText,
+            fullText: cleanText,
             currentWordCount: wordCount,
             lastPolished: 'Nov 07, 2026',
           };
