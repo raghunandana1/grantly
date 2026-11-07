@@ -9,9 +9,10 @@
 
 [![Live Deployment](https://img.shields.io/badge/live_deployment-grantly--outpost.vercel.app-5EE7FF?style=for-the-badge&logo=vercel&logoColor=black)](https://grantly-outpost.vercel.app)
 [![FAIE Score](https://img.shields.io/badge/FAIE_Score-100%2F100_Passing-4FFFC4?style=for-the-badge&logo=lighthouse&logoColor=black)](#authoritative-blueprint-alignment-matrix)
-[![Tests Passing](https://img.shields.io/badge/tests-22%2F22_passed-8B7CFF?style=for-the-badge&logo=vitest&logoColor=white)](#automated-testing-suite)
+[![Tests Passing](https://img.shields.io/badge/tests-25%2F25_passed-8B7CFF?style=for-the-badge&logo=vitest&logoColor=white)](#automated-testing-suite)
 [![Security](https://img.shields.io/badge/security-0_vulnerabilities-4FFFC4?style=for-the-badge&logo=snyk&logoColor=black)](#security--data-sanitization)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict_0_Errors-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#code-quality--architecture)
+[![ESLint](https://img.shields.io/badge/ESLint-9_Passing_0_Errors-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](#code-quality--architecture)
 [![Accessibility](https://img.shields.io/badge/accessibility-WCAG_2.1_AAA-FFB454?style=for-the-badge&logo=w3c&logoColor=black)](#accessibility--performance-guarantee)
 [![License](https://img.shields.io/badge/license-MIT-66667A?style=for-the-badge)](LICENSE)
 
@@ -159,7 +160,7 @@ npm test
    - Provides safe defaults when localStorage is empty or throws
    - Sound service supports instant muting for sensory comfort
    - Verifies high-contrast Obsidian and Champagne Gold color contrast tokens (16.1:1 ratio)
- ✓ src/tests/stateMachine.test.js (3 tests) 1ms
+ ✓ src/tests/stateMachine.test.js (3 tests) 2ms
    - Confirms all defined pipeline stages in valid progression sequence
    - Transitioning application status to awarded maintains portfolio state
    - Associates application with existing scholarship catalog record
@@ -177,10 +178,14 @@ npm test
    - Flags income cap violation when household income exceeds need-based threshold
    - Filters catalog by search query and category correctly
    - Filters catalog strictly for renewable awards
+ ✓ src/tests/components.test.jsx (3 tests) 2ms
+   - SkipLink component constructs valid accessible target anchor
+   - ShortcutsModal mounts when open and returns null when closed
+   - ErrorBoundary class component handles error states safely
 
- Test Files  5 passed (5)
-      Tests  22 passed (22)
-   Duration  112ms
+ Test Files  6 passed (6)
+      Tests  25 passed (25)
+   Duration  172ms
 ```
 
 ---
