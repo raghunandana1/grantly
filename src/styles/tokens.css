@@ -1,0 +1,36 @@
+:root {
+  /* Obsidian Velvet Canvas */
+  --bg-app: #08090d;
+  --bg-sidebar: #0c0d11;
+  --bg-surface: #121317;
+  --bg-surface-elevated: #181920;
+  --bg-surface-hover: #1e2028;
+  --bg-surface-active: #252833;
+  --bg-input: #0e0f13;
+  --bg-overlay: rgba(8, 9, 13, 0.92);
+
+  /* Linear Precision Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-muted: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.24);
+  --border-gold: rgba(201, 184, 160, 0.35);
+
+  /* High Contrast Typography */
+  --text-primary: #f7f8f9;
+  --text-secondary: #a0a4b0;
+  --text-muted: #6b7182;
+  --text-faint: #444754;
+
+  /* Luxury Champagne Gold Palette (LabTrack Signature) */
+  --gold-base: #a78b71;
+  --gold-light: #c9b8a0;
+  --gold-hover: #e8d5b7;
+  --gold-cream: #f5e6c8;
+  --gold-glow: rgba(201, 184, 160, 0.25);
+  --gold-shadow: rgba(167, 139, 113, 0.3);
+
+  /* Fonts */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Satoshi", "Helvetica Neue", sans-serif;
+  --font-display: "Clash Display", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}

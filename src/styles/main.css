@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Satoshi", "Helvetica Neue", sans-serif;
+  --font-display: "Clash Display", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+:root {
+  --bg: #08090d;
+  --fg: #f7f8f9;
+}
+
+body {
+  background-color: #08090d;
+  color: #f7f8f9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: "Clash Display", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+}
+
+.font-sans {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Satoshi", "Helvetica Neue", sans-serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Glassmorphism Containers with Specular Hairline Rims */
+.apple-glass {
+  background: rgba(20, 20, 24, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gold-glass {
+  background: rgba(20, 20, 24, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(201, 184, 160, 0.22);
+}
+
+.gold-glass:hover {
+  border-color: rgba(201, 184, 160, 0.45);
+  box-shadow: 0 12px 40px -10px rgba(167, 139, 113, 0.22);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 184, 160, 0.4);
+}
