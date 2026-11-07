@@ -7,14 +7,14 @@
 
 **Find it. Understand it. Win it. Track every dollar.**
 
-[![Live Deployment](https://img.shields.io/badge/live_runtime-localhost%3A5173-5EE7FF?style=for-the-badge&logo=vite&logoColor=black)](http://localhost:5173)
+[![Live Deployment](https://img.shields.io/badge/live_deployment-grantly--outpost.vercel.app-5EE7FF?style=for-the-badge&logo=vercel&logoColor=black)](https://grantly-outpost.vercel.app)
 [![FAIE Score](https://img.shields.io/badge/FAIE_Score-100%2F100_Passing-4FFFC4?style=for-the-badge&logo=lighthouse&logoColor=black)](#authoritative-blueprint-alignment-matrix)
 [![Tests Passing](https://img.shields.io/badge/tests-18%2F18_passed-8B7CFF?style=for-the-badge&logo=vitest&logoColor=white)](#automated-testing-suite)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7_Strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#code-quality--architecture)
 [![Accessibility](https://img.shields.io/badge/accessibility-WCAG_2.1_AAA-FFB454?style=for-the-badge&logo=w3c&logoColor=black)](#accessibility--performance-guarantee)
 [![License](https://img.shields.io/badge/license-MIT-66667A?style=for-the-badge)](LICENSE)
 
-**[→ Experience Grantly Live Workspace](http://localhost:5173)**
+**[→ Experience Grantly Live (grantly-outpost.vercel.app)](https://grantly-outpost.vercel.app)**
 
 </div>
 
